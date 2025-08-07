@@ -1,0 +1,169 @@
+/* General  */
+body {
+  /* background: linear-gradient(to bottom right, #8e8a75,   #6e5d6c); */
+}
+.navBar{
+  top:0;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none; /* hides scrollbar on Chrome */
+}
+body {
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem); /* min 1.5rem, max 3rem */
+}
+p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem); /* responsive font sizing */
+}
+:root{
+  --bg: #242526;
+  --bg-accent: #48414d;
+  --text-color: white;
+  --nav-size: 100px;
+  --border: 1px solid #47414d;
+  --border-radius: 8px;
+  --speed: 500ms
+}
+ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+  /* navigation bar */
+
+  .navBar{
+    z-index: 1;
+    color: #59769e;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    transition: .4s;
+  }
+  .image-container img{
+    transform: scale(.15);
+    translate: -500px -575px;
+  }
+  .image-container{
+    width: 200px;
+    height: 51px;
+    overflow: hidden;
+  }
+
+ /* -- Layout -- */ 
+
+  /* join section */
+
+  .joinSection > h3,p{
+    display: flex;
+    justify-content: center;
+  }
+  .joinSection{
+    padding: 30px 0px 30px 0px;
+  }
+  .joinSection button{
+    padding: 0px 30px 0px 30px;
+    background-color: rgb(179, 153, 119);
+    border-color: rgb(179, 153, 119) ;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    outline:none;
+    transition:.3s;
+  }
+  .joinSection button:hover{
+    background-color: rgb(124, 106, 83);
+    border-color:rgb(124, 106, 83);
+  }
+  
+
+ .ImgDiv{ 
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("./images/churchPhoto.jpg");  
+  filter: blur(2px) grayscale(75%);
+  height: 420px;
+  background-position: 0% 700%;
+ }
+
+ .welcome{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+  color: black;
+  justify-content: flex-start;
+  width: 1000px;
+}
+.welcome h1:nth-child(-n + 2){
+  margin: 0px 0px 0px 40px;
+  color: #ded7cd;
+  display: flex;
+  justify-self: flex-start;
+  font-size: 50px;
+  font-family: cursive;
+}
+.cross{
+  margin: 0px 0px 0px 40px;
+  color: #59769e;
+  display: flex;
+  justify-self: flex-start;
+  font-size: clamp(4rem, 10vw, 10rem);
+  font-family: cursive;
+  height: fit-content;
+  width: fit-content;
+}
+.welcome h4{
+  margin: 0px 0px 0px 40px;
+  color: #ded7cd;
+  display: flex;
+  justify-self: flex-start;
+  font-size: 20px;
+  font-family: cursive;
+  height: fit-content;
+  width: fit-content;
+}
+  /* footer */
+  .logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* <-- this makes child elements align left */
+  }
+
+  .footer{
+    background-color: black;
+    display: flex;
+    padding: 0px 50px 0px 50px;
+  }
+
+  .footerLogo{
+    width: 150px;
+    height: 51px;
+    overflow: hidden;
+
+  }
+
+  .footerLogo img{
+    transform: scale(1.3);
+    height: fit-content;
+    width: 100%;
+    translate: 0px -40px;
+  }
+  .copyright{
+    color:white;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+.webEdge{
+  margin-right: 10vw;
+  margin-left: 10vw 
+}
