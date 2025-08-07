@@ -4,11 +4,13 @@
   "description": "Way Of The Cross Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix way_of_the_cross start",
+    "server": "npm --prefix backend start"
   },
   "author": "Josiah W",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.1"
+    "concurrently": "^8.2.2"
   }
 }

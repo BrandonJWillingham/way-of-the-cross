@@ -1,0 +1,23 @@
+services:
+  - name: way-of-the-cross-api
+    type: web
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: SDKKEY
+        value: your_zoom_sdk_key
+      - key: SDKSECRET
+        value: your_zoom_sdk_secret
+      - key: PASSWORD
+        value: your_zoom_meeting_password
+
+  - name: way-of-the-cross-frontend
+    type: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    publishDir: build
+    envVars:
+      - key: REACT_APP_AUTH_ENDPOINT
+        value: https://way-of-the-cross-api.onrender.com/generate-signature

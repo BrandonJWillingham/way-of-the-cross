@@ -6,7 +6,7 @@ export default function ZoomSDK(){
 
   const getSignature = async () => {
       try {
-        const req = await fetch(authEndpoint, {
+        const req = await fetch(process.env.AUTH_END_POINT, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
