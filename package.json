@@ -1,0 +1,14 @@
+{
+  "name": "way_of_the_cross_mono",
+  "version": "1.0.0",
+  "description": "Way Of The Cross Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josiah W",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
