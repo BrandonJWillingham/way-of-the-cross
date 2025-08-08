@@ -5,24 +5,24 @@ export default function ZoomSDK(){
 
   const getSignature = async () => {
       try {
-        // const req = await fetch(process.env.AUTH_END_POINT, {
-        //   method: "POST",
-        //   headers: { "Content-Type": "application/json" },
-        //   body: JSON.stringify({
-        //     meetingNumber: process.env.MEETING_NUMBER,
-        //     role: 0,
-        //     videoWebRtcMode: 1,
-        //   }),
-        // });
-        const res = await fetch("https://way-of-the-cross-api.onrender.com/generate-signature", {
+        const res = await fetch(process.env.REACT_APP_AUTH_END_POINT, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            meetingNumber: "7507046901",
+            meetingNumber: process.env.REACT_APP_MEETING_NUMBER,
             role: 0,
             videoWebRtcMode: 1,
           }),
         });
+        // const res = await fetch("https://way-of-the-cross-api.onrender.com/generate-signature", {
+        //   method: "POST",
+        //   headers: { "Content-Type": "application/json" },
+        //   body: JSON.stringify({
+        //     meetingNumber: "7507046901",
+        //     role: 0,
+        //     videoWebRtcMode: 1,
+        //   }),
+        // });
         const { signature, meetingNumber, password,appKey } = await res.json();
         startMeeting(signature, meetingNumber, password,appKey);
       } catch (e) {
