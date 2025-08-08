@@ -2,7 +2,6 @@ import ZoomMtgEmbedded from "@zoom/meetingsdk/embedded";
 
 export default function ZoomSDK(){
   const client = ZoomMtgEmbedded.createClient();
-  const authEndpoint = '../../../backend/src/app.js'
 
   const getSignature = async () => {
       try {

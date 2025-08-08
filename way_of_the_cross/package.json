@@ -36,7 +36,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://harlemwotc.org",
+  
   "browserslist": {
     "production": [
       ">0.2%",
