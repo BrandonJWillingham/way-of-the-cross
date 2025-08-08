@@ -23,7 +23,7 @@ export default function ZoomSDK(){
             videoWebRtcMode: 1,
           }),
         });
-        const { signature, meetingNumber, password,appKey } = await req.json();
+        const { signature, meetingNumber, password,appKey } = await res.json();
         startMeeting(signature, meetingNumber, password,appKey);
       } catch (e) {
         console.log(e);
