@@ -69,7 +69,7 @@ export default function Layout(){
             <section className="webEdge" >
                 <div>
                     <h1 style={{textAlign:"center"}}>The Way of the Cross Tabernacle of Christ Church, Inc</h1>
-                    <h2 style={{textAlign:"center"}}>East Harlem Apostolic Church </h2>
+                    <h2 style={{textAlign:"center"}}> Heart of Harlem's Apostolic Church </h2>
                 </div>
 
                 <div>
@@ -131,7 +131,7 @@ export default function Layout(){
                     </p>
                     <p>
                         After the passing our founder and pastor a son of the ministry Elder Reynaldo Andino was appointed interim Pastor in 2007 until being installed officially as the second pastor of
-                        The Way of the Cross Tabernacle of Christ in May 2010 along with his wife leading LAdy Mother Doris Andino.
+                        The Way of the Cross Tabernacle of Christ in May 2010 along with his wife leading Lasdy Mother Doris Andino.
                     </p>
                 </div>
 
